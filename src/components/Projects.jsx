@@ -105,10 +105,10 @@ export default function Projects() {
                     {/* View Details Button linking to dynamic route /projects/[id] */}
                     <Link
                       href={`/projects/${project.id}`}
-                      className="inline-flex items-center gap-1.5 text-xs font-semibold bg-white/10 hover:bg-white text-slate-100 hover:text-slate-950 px-4 py-2 rounded-full transition-all duration-200 group/btn"
+                      className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold bg-white/10 hover:bg-white text-slate-100 hover:text-slate-950 px-4.5 py-2.5 rounded-full transition-all duration-200 group/btn shadow-sm"
                     >
                       <span>View Details</span>
-                      <ArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-0.5 transition-transform" />
+                      <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                     </Link>
 
                     {/* Quick External Links (Live & GitHub) */}

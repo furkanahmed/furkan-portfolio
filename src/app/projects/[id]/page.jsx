@@ -115,15 +115,15 @@ export default async function ProjectDetailPage({ params }) {
                 href={project.liveLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold bg-white text-slate-950 hover:bg-slate-200 transition-colors shadow-sm"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold bg-white text-slate-950 hover:bg-slate-200 transition-all duration-200 shadow-sm"
               >
                 <Globe className="w-4 h-4" />
                 <span>Visit Live Project</span>
-                <ExternalLink className="w-3.5 h-3.5" />
+                <ExternalLink className="w-4 h-4" />
               </a>
             ) : (
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs text-slate-400 bg-slate-800/80 border border-white/5">
-                <Lock className="w-3.5 h-3.5 text-slate-400" />
+              <span className="inline-flex items-center gap-2 px-5 py-3 rounded-full text-xs sm:text-sm text-slate-400 bg-slate-800/80 border border-white/5">
+                <Lock className="w-4 h-4 text-slate-400" />
                 <span>Private Staging Environment</span>
               </span>
             )}
@@ -133,14 +133,14 @@ export default async function ProjectDetailPage({ params }) {
                 href={project.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium bg-slate-800/90 hover:bg-slate-800 text-white border border-white/10 transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium bg-slate-800/90 hover:bg-slate-800 text-white border border-white/10 hover:border-white/20 transition-all duration-200"
               >
                 <GithubIcon className="w-4 h-4" />
                 <span>View Client GitHub Repository</span>
               </a>
             ) : (
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs text-slate-400 bg-slate-800/80 border border-white/5">
-                <Lock className="w-3.5 h-3.5 text-slate-400" />
+              <span className="inline-flex items-center gap-2 px-5 py-3 rounded-full text-xs sm:text-sm text-slate-400 bg-slate-800/80 border border-white/5">
+                <Lock className="w-4 h-4 text-slate-400" />
                 <span>Client / Private Repository</span>
               </span>
             )}
