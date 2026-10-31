@@ -13,7 +13,7 @@ export const personalInfo = {
   agencyEmail: "dremoyit@gmail.com",
   website: "https://dremoy.com",
   github: "https://github.com/furkanahmed",
-  linkedin: "https://linkedin.com/in/furkanahmed",
+  linkedin: "https://www.linkedin.com/in/furkanahmedbd",
   facebook: "https://fb.com/dremoyit",
   resumeUrl: "/resume.pdf",
   avatarUrl: "/images/furkan-ahmed.webp"

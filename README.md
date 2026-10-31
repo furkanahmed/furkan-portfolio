@@ -13,7 +13,7 @@
   <a href="https://github.com/furkanahmed">
     <img src="https://img.shields.io/badge/GitHub-furkanahmed-181717?style=flat-square&logo=github" alt="GitHub" />
   </a>
-  <a href="https://linkedin.com/in/furkanahmed">
+  <a href="https://www.linkedin.com/in/furkanahmedbd">
     <img src="https://img.shields.io/badge/LinkedIn-Furkan%20Ahmed-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn" />
   </a>
   <a href="mailto:furkanbitm@gmail.com">
