@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="8" fill="#0B0F19"/>
+  <rect x="1" y="1" width="30" height="30" rx="7" stroke="#38BDF8" stroke-width="1.5" stroke-opacity="0.3"/>
+  <!-- Stylized Monogram F -->
+  <path d="M10 8h12c0.55 0 1 0.45 1 1v2c0 0.55-0.45 1-1 1h-8v3h7c0.55 0 1 0.45 1 1v2c0 0.55-0.45 1-1 1h-7v5c0 0.55-0.45 1-1 1h-2c-0.55 0-1-0.45-1-1V9c0-0.55 0.45-1 1-1z" fill="url(#grad)"/>
+  <!-- Glowing Dot -->
+  <circle cx="23" cy="23" r="2.5" fill="#34D399"/>
+  <defs>
+    <linearGradient id="grad" x1="10" y1="8" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+</svg>
