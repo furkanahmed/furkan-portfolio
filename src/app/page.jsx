@@ -4,19 +4,22 @@ import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Education from "@/components/Education";
 import Experience from "@/components/Experience";
+import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 import SpotlightBackground from "@/components/SpotlightBackground";
 import FadeIn from "@/components/FadeIn";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen bg-[#0B0F19] text-slate-100 selection:bg-emerald-500/20 selection:text-emerald-300">
+    <div className="relative min-h-screen bg-[#0B0F19] text-slate-100 selection:bg-emerald-500/20 selection:text-emerald-300 flex flex-col justify-between">
       {/* 01. Cursor Spotlight & Grid Reveal Background */}
       <SpotlightBackground />
 
       {/* Navigation */}
       <Navbar />
 
-      <main className="relative z-10">
+      <main className="relative z-10 flex-1">
         {/* Section 2: Hero Section */}
         <FadeIn delay={100}>
           <Hero />
@@ -42,28 +45,19 @@ export default function Home() {
           <Experience />
         </FadeIn>
 
-        {/* Section 7: Projects */}
+        {/* Section 7: Projects Showcase (Requirement 9) */}
         <FadeIn delay={150}>
-          <section id="projects" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24 border-t border-white/5">
-            <span className="text-xs font-semibold uppercase tracking-wider text-emerald-400">Step 8 Next</span>
-            <h2 className="text-3xl font-bold text-white mt-1 mb-3">Featured Projects</h2>
-            <p className="text-slate-400 leading-relaxed max-w-2xl">
-              Section placeholder — Ready for Step 8
-            </p>
-          </section>
+          <Projects />
         </FadeIn>
 
-        {/* Section 8: Contact */}
+        {/* Section 8: Contact Information (Requirement 10) */}
         <FadeIn delay={150}>
-          <section id="contact" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24 border-t border-white/5">
-            <span className="text-xs font-semibold uppercase tracking-wider text-emerald-400">Step 10 Next</span>
-            <h2 className="text-3xl font-bold text-white mt-1 mb-3">Contact &amp; Inquiries</h2>
-            <p className="text-slate-400 leading-relaxed max-w-2xl">
-              Section placeholder — Ready for Step 10
-            </p>
-          </section>
+          <Contact />
         </FadeIn>
       </main>
+
+      {/* Section 11: Footer (Requirement 11) */}
+      <Footer />
     </div>
   );
 }

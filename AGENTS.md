@@ -221,3 +221,12 @@ All textual content, descriptions, bios, and copy across the entire portfolio mu
 4. **Authentic Storytelling in 'About Me' & Experience:**
    - Highlight the real balance between software development at Dremoy IT and mentoring students in the classroom.
    - Keep the voice approachable, relatable, and sincere.
+
+---
+
+## 7. Strict Git Push & Deployment Protocol (Zero Unauthorized Push Rule)
+
+Agents are **strictly forbidden from running `git push` autonomously** without explicit, verbal approval from the user:
+1. **Local Changes Only by Default:** All coding, file edits, and local builds must remain on the developer's local machine until explicitly reviewed and approved.
+2. **No Automatic/Background Git Push:** Never run `git push` unless the user explicitly gives a direct command such as *"git a push koro"* or *"push to github"*.
+3. **Verification Before Push:** When the user explicitly requests a push, only stage and push verified project files—never push unreviewed files, cache folders, or external directories.

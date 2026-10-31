@@ -148,7 +148,7 @@ export const projectsData = [
     tagline: "Business Ledger & Financial Cashflow System",
     status: "In Progress / Live Beta",
     badgeColor: "amber",
-    image: "/images/dremoy.webp",
+    image: "/images/income-manager.png",
     description: "Practical business accounting tool for tracking cash flow, customer dues, expenses, tuition fees, and financial audit logs.",
     detailedDescription: "Dremoy Income Manager is an operational accounting and cashflow management SaaS built for service agencies and educational academies. It provides granular tracking of tuition dues, invoice generations, categorized expenses, and immutable audit logs.",
     techStack: ["React", "Vite", "Supabase", "Tailwind CSS", "PostgreSQL"],
