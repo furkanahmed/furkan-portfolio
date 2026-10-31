@@ -137,7 +137,7 @@ export const projectsData = [
     detailedDescription: "FitLog is a modern fitness tracking application crafted with a sleek dark aesthetic. Users can browse exercise databases, filter by muscle groups, log daily workout routines, monitor calorie burns, and track progress over time.",
     techStack: ["Next.js", "React", "Tailwind CSS", "Context API"],
     liveLink: "https://fitlog-b14-a6.vercel.app/",
-    githubLink: "https://github.com/furkanahmed/afit",
+    githubLink: "https://github.com/furkanahmed/fitlog",
     isPrivate: false,
     challenges: "Designing intuitive client-side workout log state persistence with instant calorie calculations and fluid UI animations on mobile.",
     futureImprovements: "Integration with wearable device APIs, progressive rest-timer audio cues, and workout history export."
