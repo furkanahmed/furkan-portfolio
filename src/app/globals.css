@@ -31,18 +31,31 @@ body {
   background: #334155;
 }
 
-/* Hide Netlify Badge / Injected Feedback Drawer if present */
+/* Hide Netlify Injected Badge, Drawer, Feedback & Floating Elements */
 #netlify-badge,
 [data-netlify-badge],
 .netlify-badge,
 iframe#netlify-identity-widget,
 [class*="netlify-feedback"],
 [id*="netlify-feedback"],
-div[data-netlify-drawer] {
+div[data-netlify-drawer],
+div[data-netlify-badge],
+div[class*="netlify"],
+button[class*="netlify"],
+a[href*="netlify.com"][class*="badge"],
+a[href*="netlify.com"][style*="position: fixed"],
+div[style*="position: fixed"][style*="bottom"][style*="right"],
+div[style*="position: fixed"][style*="z-index: 2147483647"],
+div:has(> a[href*="netlify.com"]),
+div:has(> svg[aria-label*="Netlify"]) {
   display: none !important;
   visibility: hidden !important;
   pointer-events: none !important;
   opacity: 0 !important;
+  max-height: 0 !important;
+  max-width: 0 !important;
+  overflow: hidden !important;
 }
+
 
 
