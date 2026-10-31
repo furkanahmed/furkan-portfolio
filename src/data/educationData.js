@@ -40,7 +40,7 @@ export const educationData = [
     specialization: "Modern JavaScript, React.js, Next.js & Full-Stack Systems",
     board: "Programming Hero",
     institute: "Programming Hero (Batch 14)",
-    timeline: "2024 – Present",
+    timeline: "July 2026 – Present",
     statusBadge: "In Progress",
     highlights: [
       "Intensive software engineering curriculum focusing on React 19, Next.js 15 (App Router), and RESTful APIs.",

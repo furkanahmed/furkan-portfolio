@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Education from "@/components/Education";
+import Experience from "@/components/Experience";
 import SpotlightBackground from "@/components/SpotlightBackground";
 import FadeIn from "@/components/FadeIn";
 
@@ -36,15 +37,9 @@ export default function Home() {
           <Education />
         </FadeIn>
 
-        {/* Section 6: Experience */}
+        {/* Section 6: Professional Experience */}
         <FadeIn delay={150}>
-          <section id="experience" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24 border-t border-white/5">
-            <span className="text-xs font-semibold uppercase tracking-wider text-emerald-400">Step 7 Next</span>
-            <h2 className="text-3xl font-bold text-white mt-1 mb-3">Professional Experience</h2>
-            <p className="text-slate-400 leading-relaxed max-w-2xl">
-              Section placeholder — Ready for Step 7
-            </p>
-          </section>
+          <Experience />
         </FadeIn>
 
         {/* Section 7: Projects */}
