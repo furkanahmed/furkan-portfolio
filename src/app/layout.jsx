@@ -1,4 +1,11 @@
+import { Inter } from "next/font/google";
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
 
 export const metadata = {
   title: "Furkan Ahmed | Full-Stack Developer & IT Instructor",
@@ -23,8 +30,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="dark">
-      <body className="min-h-screen bg-[#0B0F19] text-slate-100 antialiased selection:bg-sky-500/20 selection:text-sky-300">
+    <html lang="en" className={`dark ${inter.variable}`}>
+      <body className="min-h-screen bg-[#0B0F19] text-slate-100 font-sans antialiased selection:bg-sky-500/20 selection:text-sky-300">
         {children}
       </body>
     </html>

@@ -57,8 +57,8 @@ export default function Skills() {
             >
               {/* Category Header */}
               <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1.5">
-                <h3 className="text-xl sm:text-2xl font-normal text-slate-100 tracking-tight flex items-center gap-2.5">
-                  <span className="text-sm font-mono text-sky-400 font-medium">0{idx + 1}.</span>
+                <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight flex items-center gap-2.5">
+                  <span className="text-sm font-mono text-sky-400 font-semibold">0{idx + 1}.</span>
                   {group.category}
                 </h3>
                 <span className="text-xs sm:text-sm text-slate-400 font-normal">

@@ -34,8 +34,8 @@ export default function Education() {
               {/* Degree Title & Timeline */}
               <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-normal text-slate-100 tracking-tight flex items-center gap-2.5">
-                    <span className="text-sm font-mono text-sky-400 font-medium">0{idx + 1}.</span>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight flex items-center gap-2.5">
+                    <span className="text-sm font-mono text-sky-400 font-semibold">0{idx + 1}.</span>
                     {edu.degree}
                   </h3>
                   <p className="text-sm text-sky-400 font-medium mt-1">
