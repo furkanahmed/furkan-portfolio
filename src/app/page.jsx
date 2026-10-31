@@ -1,6 +1,8 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Skills from "@/components/Skills";
+import Education from "@/components/Education";
 import SpotlightBackground from "@/components/SpotlightBackground";
 import FadeIn from "@/components/FadeIn";
 
@@ -24,20 +26,19 @@ export default function Home() {
           <About />
         </FadeIn>
 
-        {/* Section 4: Skills */}
+        {/* Section 4: Skills & Technologies */}
         <FadeIn delay={150}>
-          <section id="skills" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 border-t border-white/5">
-            <span className="text-xs font-semibold uppercase tracking-wider text-emerald-400">Step 5 Next</span>
-            <h2 className="text-3xl font-bold text-white mt-1 mb-3">Skills &amp; Technologies</h2>
-            <p className="text-slate-400 leading-relaxed max-w-2xl">
-              Section placeholder — Ready for Step 5
-            </p>
-          </section>
+          <Skills />
         </FadeIn>
 
-        {/* Section 5: Experience */}
+        {/* Section 5: Educational Qualification */}
         <FadeIn delay={150}>
-          <section id="experience" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 border-t border-white/5">
+          <Education />
+        </FadeIn>
+
+        {/* Section 6: Experience */}
+        <FadeIn delay={150}>
+          <section id="experience" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24 border-t border-white/5">
             <span className="text-xs font-semibold uppercase tracking-wider text-emerald-400">Step 7 Next</span>
             <h2 className="text-3xl font-bold text-white mt-1 mb-3">Professional Experience</h2>
             <p className="text-slate-400 leading-relaxed max-w-2xl">
@@ -46,20 +47,9 @@ export default function Home() {
           </section>
         </FadeIn>
 
-        {/* Section 6: Education */}
-        <FadeIn delay={150}>
-          <section id="education" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 border-t border-white/5">
-            <span className="text-xs font-semibold uppercase tracking-wider text-emerald-400">Step 6 Next</span>
-            <h2 className="text-3xl font-bold text-white mt-1 mb-3">Educational Qualification</h2>
-            <p className="text-slate-400 leading-relaxed max-w-2xl">
-              Section placeholder — Ready for Step 6
-            </p>
-          </section>
-        </FadeIn>
-
         {/* Section 7: Projects */}
         <FadeIn delay={150}>
-          <section id="projects" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 border-t border-white/5">
+          <section id="projects" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24 border-t border-white/5">
             <span className="text-xs font-semibold uppercase tracking-wider text-emerald-400">Step 8 Next</span>
             <h2 className="text-3xl font-bold text-white mt-1 mb-3">Featured Projects</h2>
             <p className="text-slate-400 leading-relaxed max-w-2xl">
@@ -70,7 +60,7 @@ export default function Home() {
 
         {/* Section 8: Contact */}
         <FadeIn delay={150}>
-          <section id="contact" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 border-t border-white/5">
+          <section id="contact" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24 border-t border-white/5">
             <span className="text-xs font-semibold uppercase tracking-wider text-emerald-400">Step 10 Next</span>
             <h2 className="text-3xl font-bold text-white mt-1 mb-3">Contact &amp; Inquiries</h2>
             <p className="text-slate-400 leading-relaxed max-w-2xl">

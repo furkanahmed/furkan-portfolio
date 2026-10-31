@@ -21,27 +21,29 @@ export const personalInfo = {
 
 export const skillsData = {
   frontend: [
-    { name: "JavaScript (ES6+)", level: "Advanced" },
-    { name: "React", level: "Advanced" },
-    { name: "Next.js (App Router)", level: "Proficient" },
-    { name: "Tailwind CSS", level: "Expert" }
+    { name: "JavaScript (ES6+)", level: "Advanced", icon: "js" },
+    { name: "React.js", level: "Advanced", icon: "react" },
+    { name: "Next.js (App Router)", level: "Proficient", icon: "next" },
+    { name: "Tailwind CSS", level: "Expert", icon: "tailwind" },
+    { name: "HTML5 & CSS3", level: "Expert", icon: "html" }
   ],
   backend: [
-    { name: "Laravel (PHP)", level: "Proficient" },
-    { name: "Supabase", level: "Proficient" },
-    { name: "Node.js Basics", level: "Intermediate" }
+    { name: "Node.js", level: "Proficient", icon: "node" },
+    { name: "Express.js", level: "Proficient", icon: "express" },
+    { name: "Next.js Server Actions", level: "Proficient", icon: "server" },
+    { name: "RESTful APIs", level: "Proficient", icon: "api" },
+    { name: "BetterAuth / Firebase", level: "Familiar", icon: "auth" }
   ],
   database: [
-    { name: "MySQL", level: "Proficient" },
-    { name: "PostgreSQL", level: "Proficient" },
-    { name: "MongoDB", level: "Intermediate" }
+    { name: "MongoDB", level: "Proficient", icon: "mongodb" },
+    { name: "PostgreSQL", level: "Proficient", icon: "postgres" },
+    { name: "Supabase", level: "Proficient", icon: "supabase" }
   ],
-  devops: [
-    { name: "VPS Server Setup", level: "Proficient" },
-    { name: "AWS Cloud Basics", level: "Familiar" },
-    { name: "Google Cloud Basics", level: "Familiar" },
-    { name: "Vercel / Netlify", level: "Expert" },
-    { name: "Git / GitHub", level: "Proficient" }
+  tools: [
+    { name: "Git & GitHub", level: "Proficient", icon: "git" },
+    { name: "Vercel / Netlify", level: "Expert", icon: "vercel" },
+    { name: "Postman", level: "Proficient", icon: "postman" },
+    { name: "VS Code", level: "Expert", icon: "vscode" }
   ]
 };
 
