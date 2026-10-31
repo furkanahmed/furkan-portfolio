@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="auto">
+  <defs>
+    <!-- Background Gradient: Deep Luxury Slate/Obsidian -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="50%" stop-color="#080e1e"/>
+      <stop offset="100%" stop-color="#020408"/>
+    </linearGradient>
+
+    <!-- Ambient Mesh Glows -->
+    <radialGradient id="glowLeft" cx="10%" cy="20%" r="65%">
+      <stop offset="0%" stop-color="#1d4ed8" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowRight" cx="90%" cy="80%" r="65%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowCenter" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Subtle border highlight -->
+    <linearGradient id="border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="320" rx="16" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="16" fill="url(#glowLeft)"/>
+  <rect width="1200" height="320" rx="16" fill="url(#glowRight)"/>
+  <rect width="1200" height="320" rx="16" fill="url(#glowCenter)"/>
+  <rect width="1200" height="320" rx="16" fill="none" stroke="url(#border)" stroke-width="1.5"/>
+
+  <!-- Content Group -->
+  <!-- Top Badge: Minimalist, sophisticated -->
+  <g transform="translate(80, 52)">
+    <rect width="280" height="32" rx="16" fill="rgba(255,255,255,0.05)" stroke="rgba(56,189,248,0.5)" stroke-width="1.2"/>
+    <circle cx="16" cy="16" r="4.5" fill="#38bdf8"/>
+    <text x="32" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#38bdf8">FULL-STACK DEVELOPER</text>
+  </g>
+
+  <!-- Name: Big, Crisp, Pure White -->
+  <text x="80" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="56" font-weight="800" fill="#ffffff" letter-spacing="-1">Furkan Ahmed</text>
+
+  <!-- Role: Elegant Cyan / Ice Blue -->
+  <text x="80" y="190" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="600" fill="#93c5fd" letter-spacing="-0.2">Full-Stack Web Developer <tspan fill="#475569">·</tspan> <tspan fill="#38bdf8">Founder of Dremoy</tspan></text>
+
+  <!-- Subtitle: Subtle & professional -->
+  <text x="80" y="226" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="400" fill="#cbd5e1">Building practical web applications, cloud deployments &amp; scalable SaaS solutions</text>
+
+  <!-- Bottom Divider Line -->
+  <line x1="80" y1="254" x2="1120" y2="254" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+  <!-- Bottom Tech Stack: Modern, clean text with bullets -->
+  <g transform="translate(80, 285)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="14" font-weight="600" fill="#ffffff">
+    <text x="0" y="0">React</text>
+    <circle cx="55" cy="-4.5" r="2.5" fill="#38bdf8"/>
+    <text x="70" y="0">Next.js</text>
+    <circle cx="138" cy="-4.5" r="2.5" fill="#818cf8"/>
+    <text x="153" y="0">JavaScript</text>
+    <circle cx="245" cy="-4.5" r="2.5" fill="#facc15"/>
+    <text x="260" y="0">Tailwind CSS</text>
+    <circle cx="370" cy="-4.5" r="2.5" fill="#38bdf8"/>
+    <text x="385" y="0">Laravel</text>
+    <circle cx="452" cy="-4.5" r="2.5" fill="#f43f5e"/>
+    <text x="467" y="0">Supabase</text>
+    <circle cx="555" cy="-4.5" r="2.5" fill="#34d399"/>
+    <text x="570" y="0">PostgreSQL</text>
+    <circle cx="672" cy="-4.5" r="2.5" fill="#60a5fa"/>
+    <text x="687" y="0">AWS</text>
+  </g>
+</svg>
+

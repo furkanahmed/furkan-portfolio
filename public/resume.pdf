@@ -1,0 +1,94 @@
+%PDF-1.4
+1 0 obj
+<<
+  /Type /Catalog
+  /Pages 2 0 R
+>>
+endobj
+2 0 obj
+<<
+  /Type /Pages
+  /Kids [3 0 R]
+  /Count 1
+>>
+endobj
+3 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 612 792]
+  /Contents 4 0 R
+  /Resources <<
+    /Font <<
+      /F1 5 0 R
+    >>
+  >>
+>>
+endobj
+4 0 obj
+<<
+  /Length 720
+>>
+stream
+BT
+/F1 20 Tf
+50 720 Td
+(Furkan Ahmed - Full-Stack Developer & IT Instructor) Tj
+/F1 10 Tf
+0 -26 Td
+(Valuka, Mymensingh, Bangladesh | furkanbitm@gmail.com | +880 1622-536026) Tj
+0 -18 Td
+(GitHub: https://github.com/furkanahmed | Agency: https://dremoy.com) Tj
+/F1 13 Tf
+0 -32 Td
+(SUMMARY) Tj
+/F1 10 Tf
+0 -18 Td
+(Practical Full-Stack Developer and IT Instructor with expertise in Next.js, React, and Laravel.) Tj
+/F1 13 Tf
+0 -30 Td
+(CORE SKILLS) Tj
+/F1 10 Tf
+0 -18 Td
+(Frontend: JavaScript, React, Next.js, Tailwind CSS) Tj
+0 -16 Td
+(Backend: Laravel, Supabase, MySQL, PostgreSQL, MongoDB) Tj
+0 -16 Td
+(DevOps: VPS Configuration, AWS Cloud Basics, Vercel, Git) Tj
+/F1 13 Tf
+0 -30 Td
+(EXPERIENCE) Tj
+/F1 10 Tf
+0 -18 Td
+(Web Developer & Co-Founder - Dremoy IT (2024 - Present)) Tj
+0 -16 Td
+(IT Instructor - Dremoy IT & Academy (2024 - Present)) Tj
+0 -16 Td
+(Independent Software Developer - BazarDor, FitLog, DevStack (2023 - Present)) Tj
+ET
+endstream
+endobj
+5 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica
+>>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000261 00000 n 
+0000001033 00000 n 
+trailer
+<<
+  /Size 6
+  /Root 1 0 R
+>>
+startxref
+1112
+%%EOF
+
