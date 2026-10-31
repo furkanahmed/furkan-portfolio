@@ -35,8 +35,8 @@ export default function Experience() {
               {/* Role Title & Timeline */}
               <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight flex items-center gap-2.5">
-                    <span className="text-sm font-mono text-sky-400 font-semibold">0{idx + 1}.</span>
+                  <h3 className="text-xl sm:text-2xl font-normal text-slate-100 tracking-tight flex items-center gap-2.5">
+                    <span className="text-sm font-mono text-sky-400 font-medium">0{idx + 1}.</span>
                     {exp.role}
                   </h3>
                   
@@ -72,10 +72,10 @@ export default function Experience() {
               </div>
 
               {/* Responsibilities List */}
-              <div className="space-y-2.5 pt-2">
+              <div className="space-y-3 pt-2">
                 {exp.responsibilities.map((resp, i) => (
-                  <div key={i} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-400 leading-relaxed">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5 opacity-80" />
+                  <div key={i} className="flex items-start gap-3 text-sm sm:text-base text-slate-300 leading-relaxed">
+                    <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
                     <span>{resp}</span>
                   </div>
                 ))}
