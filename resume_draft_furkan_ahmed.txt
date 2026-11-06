@@ -1,0 +1,50 @@
+# Furkan Ahmed
+Frontend & Web Developer
+Valuka, Mymensingh, Bangladesh | +880 1622-536026 | furkanbitm@gmail.com
+Portfolio: https://dremoy.com | GitHub: https://github.com/furkanahmed | LinkedIn: https://linkedin.com/in/furkanahmed
+
+CAREER OBJECTIVE
+----------------
+Motivated Frontend & Web Developer skilled in JavaScript, React, and Next.js. Equipped with a practical problem-solving mindset and hands-on project experience, I aim to contribute reliable code and continuous value to team objectives while growing as a dependable software engineer.
+
+TECHNICAL SKILLS
+----------------
+- Frontend: JavaScript (ES6+), React.js, Next.js, HTML5, CSS3, Tailwind CSS, Responsive Web Design
+- Backend & DB: Node.js, Express.js, RESTful APIs, Supabase, MongoDB, MySQL, PostgreSQL
+- Tools: Git, GitHub, VS Code, Postman, Vercel, Netlify, Vite
+- Soft Skills: Logical Problem Solving, Clear Communication, Team Collaboration, Time Management
+
+WORK EXPERIENCE
+---------------
+Dremoy IT — Web Developer & Platform Operations (2023 – Present)
+- Maintained and optimized responsive web pages for Dremoy IT platform (dremoy.com) using Next.js and Tailwind CSS.
+- Assisted in deploying web services and managing hosting environments on VPS and Vercel.
+
+Dremoy Academy — IT Instructor & Mentor (2023 – Present)
+- Conducted practical sessions for students on basic web development, ICT, and programming fundamentals.
+- Mentored beginners in developing logical thinking and practical problem-solving skills.
+
+PROJECTS
+--------
+1. BazarDor – Daily Commodity Price Tracker | Next.js, Tailwind CSS, BetterAuth
+   Live: https://live-bazardor.netlify.app/ | GitHub: https://github.com/furkanahmed/bazardor
+   - Built a price-tracking app for retail and wholesale markets in Bangladesh with Bengali numerals support.
+   - Implemented dynamic search filtering and a clean mobile-first UI for fast commodity price discovery.
+
+2. DevStack Builder – Interactive Tech Stack Explorer | React 18, Vite, Tailwind CSS
+   Live: https://devstack-live.netlify.app/ | GitHub: https://github.com/furkanahmed/B14-A05-DevStack
+   - Created a tool to explore and assemble customized tech stacks with duplicate selection prevention.
+   - Implemented real-time sidebar summary and state management for an intuitive developer experience.
+
+3. FitLog – Workout Library & Daily Exercise Planner | Next.js, React, Tailwind CSS
+   Live: https://fitlog-b14-a6.vercel.app/ | GitHub: https://github.com/furkanahmed/afit
+   - Developed a dark-themed workout tracking web app with calorie expenditure calculation.
+   - Built client-side state handling to track active workout days, completed sets, and routine progress.
+
+EDUCATION
+---------
+[Your Degree / Diploma] — [Your Educational Institution Name] | [Passing Year / Session]
+
+LANGUAGES
+---------
+- Bangla (Native), English (Professional Working)

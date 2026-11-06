@@ -12,10 +12,7 @@ import FadeIn from "@/components/FadeIn";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen bg-[#0B0F19] text-slate-100 selection:bg-emerald-500/20 selection:text-emerald-300 flex flex-col justify-between">
-      {/* 01. Cursor Spotlight & Grid Reveal Background */}
-      <SpotlightBackground />
-
+    <div className="relative min-h-screen bg-black text-[#E8DFD8] selection:bg-amber-400/20 selection:text-amber-200 flex flex-col justify-between">
       {/* Navigation */}
       <Navbar />
 

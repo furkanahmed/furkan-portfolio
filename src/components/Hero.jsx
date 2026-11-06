@@ -1,196 +1,135 @@
 "use client";
 
-import { useState } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
-import { 
-  Download, 
-  ArrowRight, 
-  Mail, 
-  Globe, 
-  MapPin, 
-  Briefcase,
-  Check,
-  Copy
-} from "lucide-react";
+import { ArrowUpRight, Download, Terminal, Sparkles, MapPin, Globe, Mail } from "lucide-react";
 import { personalInfo } from "@/data/portfolioData";
 
-function GithubIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" {...props}>
-      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-    </svg>
-  );
-}
-
-function LinkedinIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" {...props}>
-      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-      <rect x="2" y="9" width="4" height="12"></rect>
-      <circle cx="4" cy="4" r="2"></circle>
-    </svg>
-  );
-}
-
 export default function Hero() {
-  const [copied, setCopied] = useState(false);
-
-  const handleCopyEmail = () => {
-    navigator.clipboard.writeText(personalInfo.email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-
-  const socialLinks = [
-    { name: "GitHub", href: personalInfo.github, icon: GithubIcon },
-    { name: "LinkedIn", href: personalInfo.linkedin, icon: LinkedinIcon },
-    { name: "Website", href: personalInfo.website, icon: Globe },
-  ];
-
   return (
-    <section className="relative pt-32 pb-20 sm:pt-36 sm:pb-28 overflow-hidden">
-      {/* Subtle ambient light glows */}
-      <div className="absolute top-1/4 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[350px] bg-sky-500/10 blur-[130px] rounded-full pointer-events-none -z-10" />
-      <div className="absolute top-1/3 right-1/4 w-[450px] h-[350px] bg-indigo-500/10 blur-[140px] rounded-full pointer-events-none -z-10" />
+    <section className="relative min-h-[92vh] pt-32 pb-20 flex flex-col justify-center overflow-hidden bg-black text-[#E8DFD8]">
+      {/* Cinematic Golden Amber Vignette & Glow */}
+      <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-gradient-to-bl from-amber-500/15 via-[#C99E5D]/10 to-transparent blur-[160px] pointer-events-none -z-10" />
+      <div className="absolute bottom-10 left-10 w-[400px] h-[400px] bg-amber-700/10 blur-[150px] pointer-events-none -z-10" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
-          {/* Left Column: Ultra-clean, punchy, standard presentation */}
-          <div className="lg:col-span-7 text-center lg:text-left space-y-5">
+          {/* Left Column: Massive Hollywood Typography */}
+          <div className="lg:col-span-7 space-y-6">
             
-            {/* Minimal Status Pill */}
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 backdrop-blur-sm">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-              </span>
-              <span>Available for projects &amp; training</span>
-            </div>
+            {/* Tagline Badge */}
+            <motion.div 
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/[0.05] text-[11px] uppercase tracking-[0.28em] text-[#EAD8C7] font-mono"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-ping"></span>
+              <span>Available for Hire &bull; 2026 Season</span>
+            </motion.div>
 
-            {/* Powerful, Clean Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.12]">
-              Crafting Clean Code, <br />
-              Building{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-300 to-indigo-400">
-                Real Impact.
-              </span>
-            </h1>
+            {/* Massive Bebas-Style Dramatic Headline */}
+            <motion.div
+              initial={{ opacity: 0, y: 25 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, delay: 0.1 }}
+              className="space-y-1 select-none"
+            >
+              <h1 className="text-5xl sm:text-7xl lg:text-[5.5rem] font-black uppercase tracking-tight leading-[0.88] font-sans">
+                <span className="block text-transparent bg-clip-text bg-gradient-to-b from-white via-slate-200 to-slate-500 drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)]">
+                  I BUILD
+                </span>
+                <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#FFF0D4] via-[#D4AF37] to-[#8C6D4F] drop-shadow-[0_8px_30px_rgba(212,175,55,0.4)]">
+                  DIGITAL
+                </span>
+                <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#EAD8C7] via-[#9B7640] to-[#342410]">
+                  EXPERIENCES
+                </span>
+              </h1>
+            </motion.div>
 
-            {/* Concise Subtitle (Short & Standard) */}
-            <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 font-normal">
-              <span className="text-white font-semibold">{personalInfo.name}</span> — Full-stack developer building modern, responsive web applications with a focus on simplicity, speed, and clean architecture.
-            </p>
+            {/* Sub-label */}
+            <motion.p 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.25 }}
+              className="text-xs sm:text-sm tracking-[0.22em] uppercase text-[#C4B29E] font-mono"
+            >
+              Junior Full-Stack Developer <span className="text-amber-500/60 mx-1.5">&bull;</span> IT Instructor <span className="text-amber-500/60 mx-1.5">&bull;</span> Dremoy IT
+            </motion.p>
 
-            {/* Action Buttons: Clean & Pro */}
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-1">
+            <motion.p 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.35 }}
+              className="text-slate-400 text-sm sm:text-base leading-relaxed max-w-lg font-light"
+            >
+              Crafting high-impact web applications with React, Next.js, and modern backends. Dedicated to writing clean code and empowering next-generation developers.
+            </motion.p>
+
+            {/* Action Buttons: Metallic Gold & Dark */}
+            <motion.div 
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.45 }}
+              className="flex flex-wrap items-center gap-4 pt-3"
+            >
               <a
                 href="#projects"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold bg-gradient-to-r from-sky-500 to-indigo-600 text-white shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40 hover:opacity-95 transition-all duration-200"
+                className="group inline-flex items-center gap-2 px-7 py-3.5 border border-[#D4AF37] bg-gradient-to-r from-[#D4AF37]/20 via-[#D4AF37]/10 to-transparent hover:bg-[#D4AF37] hover:text-black text-[#FFF0D4] text-xs uppercase tracking-[0.2em] font-semibold transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.25)]"
               >
-                <span>View Projects</span>
-                <ArrowRight className="w-4 h-4" />
+                <span>EXPLORE WORK</span>
+                <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </a>
 
               <a
-                href={personalInfo.resumeUrl}
-                download="Furkan-Ahmed-Resume.pdf"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-full text-sm font-medium bg-slate-900/90 text-slate-300 border border-slate-800 hover:bg-slate-800 hover:text-white hover:border-slate-700 transition-all duration-200 shadow-sm"
+                href="/resume.pdf"
+                download="Furkan_Ahmed_Resume.pdf"
+                className="inline-flex items-center gap-2 px-6 py-3.5 border border-white/20 hover:border-white/50 text-[#C4B5A5] hover:text-white text-xs uppercase tracking-[0.18em] font-medium transition-all duration-300 backdrop-blur-sm"
               >
-                <Download className="w-4 h-4 text-sky-400" />
-                <span>Resume</span>
+                <Download className="w-4 h-4 text-amber-400" />
+                <span>RESUME</span>
               </a>
-            </div>
-
-            {/* Minimal Quick Connect Bar (Inspired by reference) */}
-            <div className="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              <div className="flex items-center p-1 rounded-full bg-slate-900/90 border border-slate-800 shadow-inner w-full max-w-xs sm:max-w-sm">
-                <div className="flex items-center gap-2 px-3 py-1 text-xs text-slate-400 flex-1 truncate font-mono">
-                  <Mail className="w-3.5 h-3.5 text-sky-400 shrink-0" />
-                  <span className="truncate">{personalInfo.email}</span>
-                </div>
-                <button
-                  onClick={handleCopyEmail}
-                  type="button"
-                  className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-sky-500 hover:bg-sky-400 text-white flex items-center gap-1.5 transition-colors shrink-0 shadow-sm"
-                  title="Copy email to clipboard"
-                >
-                  {copied ? (
-                    <>
-                      <Check className="w-3 h-3" />
-                      <span>Copied!</span>
-                    </>
-                  ) : (
-                    <>
-                      <Copy className="w-3 h-3" />
-                      <span>Connect</span>
-                    </>
-                  )}
-                </button>
-              </div>
-
-              {/* Minimal Social Icons */}
-              <div className="flex items-center gap-2">
-                {socialLinks.map((social) => {
-                  const Icon = social.icon;
-                  return (
-                    <a
-                      key={social.name}
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2.5 rounded-full bg-slate-900/70 border border-slate-800 text-slate-400 hover:text-sky-400 hover:border-sky-500/40 hover:bg-slate-800/80 transition-all duration-200"
-                      aria-label={`Visit Furkan's ${social.name}`}
-                      title={social.name}
-                    >
-                      <Icon className="w-4 h-4" />
-                    </a>
-                  );
-                })}
-              </div>
-            </div>
+            </motion.div>
 
           </div>
 
-          {/* Right Column: World-Class Clean Portrait Presentation */}
-          <div className="lg:col-span-5 flex justify-center">
+          {/* Right Column: Dramatic Cinematic Portrait */}
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            className="lg:col-span-5 flex justify-center lg:justify-end"
+          >
             <div className="relative w-full max-w-sm sm:max-w-md group">
-              
-              {/* Subtle accent halo */}
-              <div className="absolute -inset-1 rounded-3xl bg-gradient-to-tr from-sky-500/20 via-indigo-500/20 to-sky-400/10 blur-xl opacity-70 group-hover:opacity-100 transition-opacity duration-500"></div>
+              {/* Outer Golden Aura */}
+              <div className="absolute -inset-2 bg-gradient-to-tr from-[#D4AF37]/30 via-[#9B7640]/20 to-transparent blur-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-700"></div>
 
-              {/* Main Photo Frame */}
-              <div className="relative rounded-3xl overflow-hidden bg-slate-900 border border-slate-800/80 shadow-2xl">
-                <div className="relative aspect-[4/5] w-full overflow-hidden bg-slate-950">
+              <div className="relative rounded-2xl overflow-hidden border border-[#D4AF37]/40 bg-black shadow-[0_20px_60px_rgba(0,0,0,0.9)]">
+                <div className="relative aspect-[4/5] w-full">
                   <Image
                     src={personalInfo.avatarUrl}
-                    alt="Furkan Ahmed - Full-Stack Developer & IT Instructor"
+                    alt={personalInfo.name}
                     fill
-                    sizes="(max-width: 768px) 100vw, 420px"
-                    className="object-cover object-top filter contrast-[1.02] brightness-95 group-hover:scale-[1.02] transition-transform duration-500"
                     priority
+                    className="object-cover object-top filter grayscale-[30%] contrast-[1.1] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                   />
-                  {/* Subtle inner dark vignette at bottom */}
-                  <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#0B0F19] via-[#0B0F19]/40 to-transparent pointer-events-none"></div>
+                  {/* Cinematic black fade at bottom */}
+                  <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black via-black/70 to-transparent"></div>
                 </div>
 
-                {/* Single minimalist floating pill */}
-                <div className="absolute bottom-4 inset-x-4 p-3 rounded-2xl bg-slate-900/85 backdrop-blur-md border border-slate-800/90 flex items-center justify-between shadow-xl">
-                  <div className="flex items-center gap-2.5">
-                    <div className="w-8 h-8 rounded-lg bg-sky-500/15 border border-sky-500/30 flex items-center justify-center text-sky-400">
-                      <Briefcase className="w-4 h-4" />
-                    </div>
-                    <div>
-                      <p className="text-xs font-semibold text-white leading-tight">Co-Founder &amp; Instructor</p>
-                      <p className="text-[11px] text-slate-400">Dremoy IT • Since 2024</p>
-                    </div>
+                {/* Floating Film Badge */}
+                <div className="absolute bottom-4 inset-x-4 p-3.5 rounded-xl bg-black/80 backdrop-blur-md border border-[#D4AF37]/30 flex items-center justify-between">
+                  <div>
+                    <p className="text-[10px] tracking-[0.24em] uppercase text-amber-400 font-mono">DIRECTOR / DEV</p>
+                    <p className="text-sm font-bold text-white tracking-wide">{personalInfo.name}</p>
                   </div>
-                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-sm shadow-emerald-400/50" title="Active"></span>
+                  <span className="text-[11px] font-mono text-slate-400">DREMOY IT</span>
                 </div>
               </div>
-
             </div>
-          </div>
+          </motion.div>
 
         </div>
       </div>

@@ -169,3 +169,21 @@ const handleCopy = () => {
 2. **Mobile Cleanliness:** টাচস্ক্রিনে অপ্রয়োজনীয় মাউস ট্র্যাকার ডিসেবল থাকে।
 3. **Reduced Motion Friendly:** অ্যানিমেশন অতি মৃদু রাখা হয়েছে যা ব্যবহারকারীকে বিরক্ত করে না।
 
+---
+
+## 6. Global Typography & Font Size Architecture (Design System)
+
+আন্তর্জাতিক টেক পোর্টফোলিও (যেমন: Vercel, Linear, Untitled UI) এবং Bento Grids ডিজাইনের উপর ভিত্তি করে টাইপোগ্রাফি স্কেল:
+
+| এলিমেন্ট (Element) | ফন্ট সাইজ (Mobile / Desktop) | Tailwind Class | Weight (পুরুত্ব) | কালার কোড | ব্যবহার |
+|:---|:---|:---|:---|:---|:---|
+| **হিরো মেইন টাইটেল (H1)** | 36px / **56px–64px** | `text-4xl sm:text-6xl` | `font-extrabold` (800) | `#FFFFFF` | *"Hi, I'm Furkan Ahmed"* |
+| **সেকশন হেডিং (H2)** | 28px / **36px–40px** | `text-3xl sm:text-4xl` | `font-bold` (700) | `#FFFFFF` | *"About Me"*, *"Projects"* |
+| **কার্ড টাইটেল (H3)** | 20px / **24px** | `text-xl sm:text-2xl` | `font-bold` (700) | `#F8FAFC` | প্রজেক্ট কার্ড, এক্সপেরিয়েন্স রোল |
+| **সাব-হেডিং / ডেজিগনেশন** | 16px / **20px** | `text-base sm:text-xl` | `font-medium` (500) | `#94A3B8` | *"Junior Full-Stack Web Developer"* |
+| **Navbar মেনু লিংক** | 14px / **15px–16px** | `text-sm sm:text-base` | `font-semibold` (600) | `#CBD5E1` / Active `#38BDF8` | মেনু লিংকসমূহ (`px-4 py-1.5`) |
+| **মেইন বডি প্যারাগ্রাফ (Body)** | 15px / **16px–17px** | `text-base sm:text-lg` | `font-normal` (400) | `#CBD5E1` (leading-relaxed 1.7) | About Me ও প্রজেক্ট বিবরণী |
+| **সেকেন্ডারি টেক্সট / মেটা** | 13px / **14px** | `text-xs sm:text-sm` | `font-medium` (500) | `#64748B` | তারিখ, লোকেশন (`2023 – Present`) |
+| **ব্যাজ ও বাটন লেবেল (Pills)** | 12px / **13px** | `text-xs sm:text-xs` | `font-semibold` (600) | `#F1F5F9` | টেক স্ট্যাক ব্যাজ (React, Next.js) |
+
+
