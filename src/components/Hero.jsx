@@ -63,7 +63,7 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.35 }}
-              className="text-slate-400 text-sm sm:text-base leading-relaxed max-w-lg font-light"
+              className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-xl font-normal"
             >
               Crafting high-impact web applications with React, Next.js, and modern backends. Dedicated to writing clean code and empowering next-generation developers.
             </motion.p>

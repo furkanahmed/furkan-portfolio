@@ -43,9 +43,7 @@ export default function Home() {
         </FadeIn>
 
         {/* Section 7: Projects Showcase (Requirement 9) */}
-        <FadeIn delay={150}>
-          <Projects />
-        </FadeIn>
+        <Projects />
 
         {/* Section 8: Contact Information (Requirement 10) */}
         <FadeIn delay={150}>
