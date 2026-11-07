@@ -11,20 +11,20 @@ import { personalInfo } from "@/data/portfolioData";
 
 export default function About() {
   return (
-    <section id="about" className="py-28 sm:py-36 relative overflow-hidden bg-black text-[#E8DFD8]">
+    <section id="about" className="py-28 sm:py-36 relative overflow-x-clip bg-black text-[#E8DFD8]">
       {/* Cinematic Golden Amber Ambient Lights */}
-      <div className="absolute top-1/3 left-1/4 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-amber-500/10 via-[#D4AF37]/5 to-transparent blur-[170px] pointer-events-none -z-10" />
+      <div className="absolute top-1/3 left-1/4 -translate-y-1/2 w-[280px] sm:w-[420px] md:w-[600px] h-[280px] sm:h-[420px] md:h-[600px] bg-gradient-to-tr from-amber-500/10 via-[#D4AF37]/5 to-transparent blur-[120px] sm:blur-[170px] pointer-events-none -z-10 max-w-full" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-full box-border">
         
         {/* Section Header - Bold, Large & Cinematic */}
-        <div className="max-w-3xl mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-xs font-mono tracking-[0.25em] uppercase text-amber-400 bg-amber-500/[0.08] border border-amber-500/30">
-            <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
-            <span>CHAPTER 01 &bull; ABOUT ME</span>
+        <div className="max-w-3xl mb-16 space-y-4 w-full max-w-full box-border">
+          <div className="inline-flex max-w-full items-center gap-2 sm:gap-2.5 px-3 sm:px-4 py-1.5 rounded-full text-[10px] sm:text-xs font-mono tracking-[0.14em] sm:tracking-[0.25em] uppercase text-amber-400 bg-amber-500/[0.08] border border-amber-500/30 [overflow-wrap:anywhere]">
+            <span className="w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-amber-400 animate-pulse shrink-0"></span>
+            <span className="break-words">CHAPTER 01 &bull; ABOUT ME</span>
           </div>
           
-          <h2 className="text-4xl sm:text-6xl font-black uppercase tracking-tight text-white leading-tight font-sans">
+          <h2 className="text-[clamp(2.2rem,8vw,3.75rem)] font-black uppercase tracking-tight text-white leading-tight font-sans [overflow-wrap:anywhere] break-words">
             Built on logic, <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-[#D4AF37] to-amber-500">
               driven by genuine impact.
@@ -33,7 +33,7 @@ export default function About() {
           
           <div className="space-y-3 pt-2">
             {personalInfo.bio.map((paragraph, index) => (
-              <p key={index} className="text-base sm:text-lg text-slate-300 font-normal leading-relaxed">
+              <p key={index} className="text-base sm:text-lg text-slate-300 font-normal leading-relaxed [overflow-wrap:anywhere]">
                 {paragraph}
               </p>
             ))}

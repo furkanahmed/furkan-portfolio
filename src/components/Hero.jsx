@@ -7,26 +7,26 @@ import { personalInfo } from "@/data/portfolioData";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[92vh] pt-32 pb-20 flex flex-col justify-center overflow-hidden bg-black text-[#E8DFD8]">
+    <section className="relative overflow-x-clip min-h-[92vh] pt-32 pb-20 flex flex-col justify-center bg-black text-[#E8DFD8] w-full max-w-full box-border">
       {/* Cinematic Golden Amber Vignette & Glow */}
-      <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-gradient-to-bl from-amber-500/15 via-[#C99E5D]/10 to-transparent blur-[160px] pointer-events-none -z-10" />
-      <div className="absolute bottom-10 left-10 w-[400px] h-[400px] bg-amber-700/10 blur-[150px] pointer-events-none -z-10" />
+      <div className="absolute top-1/4 right-1/4 w-[280px] sm:w-[400px] md:w-[500px] h-[280px] sm:h-[400px] md:h-[500px] bg-gradient-to-bl from-amber-500/15 via-[#C99E5D]/10 to-transparent blur-[120px] sm:blur-[160px] pointer-events-none -z-10 max-w-full" />
+      <div className="absolute bottom-10 left-10 w-[240px] sm:w-[320px] md:w-[400px] h-[240px] sm:h-[320px] md:h-[400px] bg-amber-700/10 blur-[110px] sm:blur-[150px] pointer-events-none -z-10 max-w-full" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-full box-border">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center w-full max-w-full box-border">
           
           {/* Left Column: Massive Hollywood Typography */}
-          <div className="lg:col-span-7 space-y-6">
+          <div className="lg:col-span-7 space-y-6 w-full max-w-full box-border">
             
             {/* Tagline Badge */}
             <motion.div 
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/[0.05] text-[11px] uppercase tracking-[0.28em] text-[#EAD8C7] font-mono"
+              className="inline-flex max-w-full items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/[0.05] text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.28em] text-[#EAD8C7] font-mono [overflow-wrap:anywhere]"
             >
-              <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-ping"></span>
-              <span>Available for Hire &bull; 2026 Season</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-ping shrink-0"></span>
+              <span className="truncate sm:overflow-visible">Available for Hire &bull; 2026 Season</span>
             </motion.div>
 
             {/* Massive Bebas-Style Dramatic Headline */}
@@ -34,9 +34,9 @@ export default function Hero() {
               initial={{ opacity: 0, y: 25 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.1 }}
-              className="space-y-1 select-none"
+              className="space-y-1 select-none w-full max-w-full box-border"
             >
-              <h1 className="text-5xl sm:text-7xl lg:text-[5.5rem] font-black uppercase tracking-tight leading-[0.88] font-sans">
+              <h1 className="text-[clamp(2.5rem,10.5vw,5.5rem)] font-black uppercase tracking-tight leading-[0.92] sm:leading-[0.88] font-sans [overflow-wrap:anywhere] break-words">
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-white via-slate-200 to-slate-500 drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)]">
                   I BUILD
                 </span>
@@ -54,16 +54,16 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.25 }}
-              className="text-xs sm:text-sm tracking-[0.22em] uppercase text-[#C4B29E] font-mono"
+              className="text-xs sm:text-sm tracking-[0.15em] sm:tracking-[0.22em] uppercase text-[#C4B29E] font-mono [overflow-wrap:anywhere] break-words"
             >
-              Junior Full-Stack Developer <span className="text-amber-500/60 mx-1.5">&bull;</span> IT Instructor <span className="text-amber-500/60 mx-1.5">&bull;</span> Dremoy IT
+              Junior Full-Stack Developer <span className="text-amber-500/60 mx-1 sm:mx-1.5">&bull;</span> IT Instructor <span className="text-amber-500/60 mx-1 sm:mx-1.5">&bull;</span> Dremoy IT
             </motion.p>
 
             <motion.p 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.35 }}
-              className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-xl font-normal"
+              className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-xl font-normal [overflow-wrap:anywhere] break-words"
             >
               Crafting high-impact web applications with React, Next.js, and modern backends. Dedicated to writing clean code and empowering next-generation developers.
             </motion.p>

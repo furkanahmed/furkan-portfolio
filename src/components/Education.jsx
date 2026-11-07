@@ -22,20 +22,20 @@ export default function Education() {
   };
 
   return (
-    <section id="education" className="py-24 sm:py-32 relative overflow-hidden bg-black text-[#E8DFD8]">
+    <section id="education" className="py-24 sm:py-32 relative overflow-x-clip bg-black text-[#E8DFD8]">
       {/* Subtle Cinematic Ambient Light */}
-      <div className="absolute top-1/2 left-1/3 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-amber-500/10 via-[#D4AF37]/5 to-transparent blur-[160px] pointer-events-none -z-10" />
+      <div className="absolute top-1/2 left-1/3 -translate-y-1/2 w-[260px] sm:w-[380px] md:w-[500px] h-[260px] sm:h-[380px] md:h-[500px] bg-gradient-to-tr from-amber-500/10 via-[#D4AF37]/5 to-transparent blur-[110px] sm:blur-[160px] pointer-events-none -z-10 max-w-full" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-full box-border">
         
         {/* Simple & Clean Section Header */}
-        <div className="mb-14 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono tracking-[0.2em] uppercase text-amber-400 bg-amber-500/[0.08] border border-amber-500/30">
-            <span className="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
-            <span>CHAPTER 03 &bull; EDUCATION</span>
+        <div className="mb-14 space-y-3 w-full max-w-full box-border">
+          <div className="inline-flex max-w-full items-center gap-2 px-3 sm:px-3.5 py-1 rounded-full text-[10px] sm:text-xs font-mono tracking-[0.14em] sm:tracking-[0.2em] uppercase text-amber-400 bg-amber-500/[0.08] border border-amber-500/30 [overflow-wrap:anywhere]">
+            <span className="w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0"></span>
+            <span className="break-words">CHAPTER 03 &bull; EDUCATION</span>
           </div>
 
-          <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white font-sans">
+          <h2 className="text-[clamp(1.9rem,6.5vw,3rem)] font-black uppercase tracking-tight text-white font-sans [overflow-wrap:anywhere] break-words">
             Educational Background
           </h2>
         </div>

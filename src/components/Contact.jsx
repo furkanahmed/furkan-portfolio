@@ -94,19 +94,19 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-24 sm:py-32 border-t border-white/[0.08] relative bg-black">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-24 sm:py-32 border-t border-white/[0.08] relative overflow-x-clip bg-black">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-full box-border">
         
         {/* Unified Section Header */}
-        <div className="space-y-4 mb-16 text-center sm:text-left">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono font-medium text-amber-400 bg-amber-950/40 border border-amber-500/30 backdrop-blur-sm">
-            <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
-            <span className="uppercase tracking-widest">GET IN TOUCH</span>
+        <div className="space-y-4 mb-16 text-center sm:text-left w-full max-w-full box-border">
+          <div className="inline-flex max-w-full items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded-full text-[10px] sm:text-xs font-mono font-medium text-amber-400 bg-amber-950/40 border border-amber-500/30 backdrop-blur-sm [overflow-wrap:anywhere]">
+            <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse shrink-0" />
+            <span className="uppercase tracking-[0.14em] sm:tracking-widest break-words">GET IN TOUCH</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
+          <h2 className="text-[clamp(1.9rem,6.5vw,3rem)] font-black text-white tracking-tight leading-tight [overflow-wrap:anywhere] break-words">
             Let's Build Something Reliable
           </h2>
-          <p className="text-slate-400 text-sm sm:text-base max-w-xl leading-relaxed">
+          <p className="text-slate-400 text-sm sm:text-base max-w-xl leading-relaxed [overflow-wrap:anywhere]">
             Have a web development project, technical consultation, or training inquiry? Reach out directly via email, WhatsApp, or the message form.
           </p>
         </div>

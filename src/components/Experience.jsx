@@ -19,42 +19,42 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="py-28 sm:py-36 relative overflow-hidden bg-black text-[#E8DFD8]"
+      className="py-28 sm:py-36 relative overflow-x-clip bg-black text-[#E8DFD8]"
     >
       {/* Subtle Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[45rem] h-[45rem] bg-[#D4AF37]/[0.03] rounded-full blur-[160px] pointer-events-none -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[450px] md:w-[45rem] h-[300px] sm:h-[450px] md:h-[45rem] bg-[#D4AF37]/[0.03] rounded-full blur-[110px] sm:blur-[160px] pointer-events-none -z-10 max-w-full" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-full box-border relative z-10">
         
         {/* Section Header - Perfectly Balanced */}
-        <div className="max-w-3xl mb-20 space-y-4">
-          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-xs font-mono tracking-[0.25em] uppercase text-amber-400 bg-amber-500/[0.08] border border-amber-500/30">
-            <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
-            <span>CHAPTER 04 &bull; CAREER TIMELINE</span>
+        <div className="max-w-3xl mb-14 sm:mb-20 space-y-4 w-full max-w-full box-border">
+          <div className="inline-flex max-w-full items-center gap-2 sm:gap-2.5 px-3 sm:px-4 py-1.5 rounded-full text-[10px] sm:text-xs font-mono tracking-[0.14em] sm:tracking-[0.25em] uppercase text-amber-400 bg-amber-500/[0.08] border border-amber-500/30 [overflow-wrap:anywhere]">
+            <span className="w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-amber-400 animate-pulse shrink-0"></span>
+            <span className="break-words">CHAPTER 04 &bull; CAREER TIMELINE</span>
           </div>
 
-          <h2 className="text-4xl sm:text-6xl font-black uppercase tracking-tight text-white leading-tight font-sans">
+          <h2 className="text-[clamp(2.1rem,7.5vw,3.75rem)] font-black uppercase tracking-tight text-white leading-tight font-sans [overflow-wrap:anywhere] break-words">
             Practical execution, <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-[#D4AF37] to-amber-500">
               classroom leadership.
             </span>
           </h2>
 
-          <p className="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-slate-300 font-normal leading-relaxed [overflow-wrap:anywhere]">
             A track record spanning full-stack software development, production VPS deployments, and foundational coding education.
           </p>
         </div>
 
         {/* Minimalist Route Map Timeline - Polished & Structured */}
-        <div ref={timelineTrackRef} className="relative w-full">
+        <div ref={timelineTrackRef} className="relative w-full max-w-full box-border">
           
           {/* Inactive Background Track Line (Starts right from Center of Node 1 to Node 3) */}
-          <div className="absolute left-[20px] md:left-[210px] top-[26px] bottom-10 w-[2px] bg-slate-800/80 rounded-full" />
+          <div className="absolute left-[16px] sm:left-[20px] md:left-[210px] top-[26px] bottom-10 w-[2px] bg-slate-800/80 rounded-full" />
           
           {/* Ultra-Visible Animated Gold Laser Beam (Anchored from 0px at Node 1) */}
           <motion.div
             style={{ height: lineHeight }}
-            className="absolute left-[20px] md:left-[210px] top-[26px] max-h-[calc(100%-60px)] w-[3px] bg-gradient-to-b from-[#FFF0D4] via-[#D4AF37] to-[#F59E0B] shadow-[0_0_15px_rgba(212,175,55,1),0_0_30px_rgba(245,158,11,0.6)] origin-top rounded-full z-10 pointer-events-none"
+            className="absolute left-[16px] sm:left-[20px] md:left-[210px] top-[26px] max-h-[calc(100%-60px)] w-[3px] bg-gradient-to-b from-[#FFF0D4] via-[#D4AF37] to-[#F59E0B] shadow-[0_0_15px_rgba(212,175,55,1),0_0_30px_rgba(245,158,11,0.6)] origin-top rounded-full z-10 pointer-events-none"
           >
             {/* Glowing Traveling Spark Head at the tip of the line */}
             <div className="absolute -bottom-1.5 -left-[4.5px] w-3 h-3 rounded-full bg-white shadow-[0_0_12px_#FFF,0_0_20px_#D4AF37] animate-pulse" />
@@ -68,7 +68,7 @@ export default function Experience() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.6, delay: idx * 0.1 }}
-                className="relative flex flex-col md:flex-row items-start group"
+                className="relative flex flex-col md:flex-row items-start group w-full max-w-full box-border min-w-0"
               >
                 {/* Desktop Timeline Pillar (Left side - 210px) */}
                 <div className="hidden md:flex flex-col items-end w-[210px] shrink-0 pr-10 pt-1 text-right">
@@ -82,27 +82,27 @@ export default function Experience() {
                 </div>
 
                 {/* Route Node (Interactive Glowing Pulse Center - Exactly at top 26px) */}
-                <div className="absolute left-[20px] md:left-[210px] top-[26px] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center z-20">
-                  <div className="absolute w-10 h-10 rounded-full border border-amber-400/20 group-hover:border-amber-400/80 group-hover:scale-150 transition-all duration-500 ease-out" />
-                  <div className="w-4 h-4 rounded-full bg-[#120F0C] border-2 border-amber-500 group-hover:bg-amber-400 group-hover:shadow-[0_0_20px_#D4AF37] transition-all duration-300" />
+                <div className="absolute left-[16px] sm:left-[20px] md:left-[210px] top-[26px] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center z-20">
+                  <div className="absolute w-8 sm:w-10 h-8 sm:h-10 rounded-full border border-amber-400/20 group-hover:border-amber-400/80 group-hover:scale-150 transition-all duration-500 ease-out" />
+                  <div className="w-3.5 sm:w-4 h-3.5 sm:h-4 rounded-full bg-[#120F0C] border-2 border-amber-500 group-hover:bg-amber-400 group-hover:shadow-[0_0_20px_#D4AF37] transition-all duration-300" />
                 </div>
 
                 {/* Content Card (Right of Track) */}
-                <div className="ml-14 md:ml-12 pl-2 flex-1 w-full">
+                <div className="ml-9 sm:ml-12 md:ml-12 pl-1 sm:pl-2 flex-1 w-full max-w-full box-border min-w-0">
                   
                   {/* Mobile Timeline Tag */}
                   <div className="md:hidden flex items-center gap-2 mb-2">
-                    <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-mono font-semibold text-amber-400 bg-amber-500/10 border border-amber-500/20">
+                    <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] sm:text-xs font-mono font-semibold text-amber-400 bg-amber-500/10 border border-amber-500/20">
                       <Calendar className="w-3 h-3" />
                       {exp.period}
                     </span>
-                    <span className="text-[11px] font-mono uppercase text-slate-500">
+                    <span className="text-[10px] sm:text-[11px] font-mono uppercase text-slate-500">
                       {exp.category}
                     </span>
                   </div>
 
                   {/* Polished Glass Capsule Container */}
-                  <div className="p-7 sm:p-9 rounded-3xl bg-gradient-to-br from-slate-900/80 via-slate-950 to-black border border-white/[0.10] group-hover:border-amber-500/40 transition-all duration-300 shadow-xl">
+                  <div className="p-5 sm:p-7 md:p-9 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-slate-900/80 via-slate-950 to-black border border-white/[0.10] group-hover:border-amber-500/40 transition-all duration-300 shadow-xl w-full max-w-full box-border min-w-0">
                     
                     {/* Header: Role & Organization */}
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-5 mb-5 border-b border-white/[0.08]">
