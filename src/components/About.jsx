@@ -7,6 +7,7 @@ import {
   Heart,
   ArrowUpRight
 } from "lucide-react";
+import { personalInfo } from "@/data/portfolioData";
 
 export default function About() {
   return (
@@ -30,9 +31,13 @@ export default function About() {
             </span>
           </h2>
           
-          <p className="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed">
-            I don&apos;t just write syntax—I solve practical problems through code, deliver value for teams, and teach others to do the same.
-          </p>
+          <div className="space-y-3 pt-2">
+            {personalInfo.bio.map((paragraph, index) => (
+              <p key={index} className="text-base sm:text-lg text-slate-300 font-normal leading-relaxed">
+                {paragraph}
+              </p>
+            ))}
+          </div>
         </div>
 
         {/* Premium Bento Grid - High Readability & Large Typography */}

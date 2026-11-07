@@ -3,7 +3,7 @@ export const personalInfo = {
   role: "Full-Stack Developer & IT Instructor",
   tagline: "I build practical web applications and teach programming to people who want to become developers.",
   bio: [
-    "I am a web developer and instructor based in Valuka, Mymensingh. Most of my days are spent writing code with React, Next.js, and Laravel, or in the classroom helping students write their first programs.",
+    "I am a web developer and instructor based in Bhaluka, Mymensingh. Most of my days are spent writing code with React, Next.js, and Laravel, or in the classroom helping students write their first programs.",
     "At Dremoy IT, I build client websites, manage web platforms, and configure our VPS servers. I genuinely love both sides of my work: solving technical challenges in code, and breaking down complex concepts so beginners can learn with confidence."
   ],
   location: "Bhaluka, Mymensingh, Bangladesh",
@@ -47,51 +47,10 @@ export const skillsData = {
   ]
 };
 
-export const experienceData = [
-  {
-    category: "Software Development",
-    role: "Web Developer & Co-Founder",
-    organization: "Dremoy IT",
-    url: "https://dremoy.com",
-    period: "2024 – Present",
-    responsibilities: [
-      "Architecting and managing website operations and digital platform workflows for Dremoy IT (dremoy.com).",
-      "Designing responsive, accessible web applications and tailored software tools for clients.",
-      "Configuring VPS cloud instances, domain routing, SSL environments, and production deployments."
-    ]
-  },
-  {
-    category: "Software Development",
-    role: "Independent Software Projects Developer",
-    organization: "Self-Directed Projects",
-    period: "2023 – Present",
-    responsibilities: [
-      "Engineering full-stack web applications including BazarDor, FitLog, and DevStack Builder.",
-      "Architecting SaaS prototypes: Dremoy Income Manager (financial audit & cash flow ledger) and Dremoy School ERP (multi-tenant administrative prototype)."
-    ]
-  },
-  {
-    category: "Teaching Experience",
-    role: "IT Instructor / Teacher",
-    organization: "Dremoy IT & Academy",
-    url: "https://dremoy.com/it-training",
-    period: "2024 – Present",
-    responsibilities: [
-      "Teaching students foundational ICT, computer applications, and programming principles.",
-      "Delivering hands-on coding sessions in simple, accessible, and practical formats.",
-      "Mentoring learners to build real-world confidence, technical problem-solving, and practical computing skills."
-    ]
-  }
-];
-
-export const educationData = [
-  {
-    degree: "Higher Secondary Certificate (HSC) & Diploma Studies",
-    institution: "Bangladesh Technical Education Board / Higher Secondary Education",
-    period: "Completed",
-    description: "Focus on Science, Mathematics, Information & Communication Technology fundamentals."
-  }
-];
+// Experience data is maintained in src/data/experienceData.js
+// Education data is maintained in src/data/educationData.js
+export { experienceData } from "./experienceData";
+export { educationData } from "./educationData";
 
 export const projectsData = [
   {
