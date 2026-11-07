@@ -6,7 +6,7 @@ export const personalInfo = {
     "I am a web developer and instructor based in Valuka, Mymensingh. Most of my days are spent writing code with React, Next.js, and Laravel, or in the classroom helping students write their first programs.",
     "At Dremoy IT, I build client websites, manage web platforms, and configure our VPS servers. I genuinely love both sides of my work: solving technical challenges in code, and breaking down complex concepts so beginners can learn with confidence."
   ],
-  location: "Valuka, Mymensingh, Bangladesh",
+  location: "Bhaluka, Mymensingh, Bangladesh",
   phone: "+880 1622-536026",
   whatsapp: "https://wa.me/8801622536026",
   email: "furkanbitm@gmail.com",
