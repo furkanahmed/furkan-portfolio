@@ -103,7 +103,7 @@ export default function Navbar() {
                     <motion.div
                       layoutId="activeNavIndicator"
                       transition={{ type: "spring", stiffness: 380, damping: 30 }}
-                      className="absolute inset-0 rounded-full bg-gradient-to-r from-sky-500/20 via-indigo-500/20 to-sky-500/10 border border-sky-400/40 shadow-[0_0_20px_rgba(56,189,248,0.25),inset_0_1px_1px_rgba(255,255,255,0.4)]"
+                      className="absolute inset-0 rounded-full bg-gradient-to-r from-amber-500/25 via-[#D4AF37]/20 to-amber-500/15 border border-[#D4AF37]/50 shadow-[0_0_20px_rgba(212,175,55,0.3),inset_0_1px_1px_rgba(255,255,255,0.3)]"
                     />
                   )}
 
@@ -119,7 +119,7 @@ export default function Navbar() {
                   <span className="relative z-10 flex items-center gap-1.5">
                     {link.name}
                     {isActive && (
-                      <span className="w-1.5 h-1.5 rounded-full bg-sky-400 shadow-[0_0_6px_rgba(56,189,248,1)]"></span>
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37] shadow-[0_0_8px_rgba(212,175,55,1)]"></span>
                     )}
                   </span>
                 </Link>
@@ -132,15 +132,15 @@ export default function Navbar() {
             <a
               href="/resume.pdf"
               download="Furkan_Ahmed_Resume.pdf"
-              className="group inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold text-slate-300 hover:text-white bg-slate-900/90 hover:bg-slate-800 border border-slate-700/80 hover:border-slate-600 transition-all duration-200 hover:shadow-lg"
+              className="group inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold text-slate-300 hover:text-white bg-[#0B1120] hover:bg-slate-800 border border-white/10 hover:border-amber-400/40 transition-all duration-200 hover:shadow-lg"
             >
-              <FileText className="w-4 h-4 text-sky-400 group-hover:scale-110 transition-transform" />
+              <FileText className="w-4 h-4 text-amber-400 group-hover:scale-110 transition-transform" />
               <span>Resume</span>
             </a>
 
             <Link
               href="/#contact"
-              className="inline-flex items-center gap-2 px-5 py-2 rounded-full text-sm font-semibold bg-gradient-to-r from-sky-400 via-sky-300 to-indigo-400 text-slate-950 hover:opacity-95 hover:shadow-[0_0_25px_rgba(56,189,248,0.45)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
+              className="inline-flex items-center gap-2 px-5 py-2 rounded-full text-sm font-semibold bg-[#D4AF37] hover:bg-[#F3E5AB] text-black hover:shadow-[0_0_25px_rgba(212,175,55,0.45)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 font-sans shadow-md"
             >
               <Send className="w-3.5 h-3.5" />
               <span>Hire Me</span>
@@ -152,11 +152,11 @@ export default function Navbar() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="inline-flex items-center justify-center p-2.5 rounded-xl bg-slate-900/80 border border-white/10 text-slate-300 hover:text-white hover:bg-slate-800 focus:outline-none transition-colors"
+              className="inline-flex items-center justify-center p-2.5 rounded-xl bg-[#0B1120] border border-white/10 text-slate-300 hover:text-white hover:bg-slate-800 focus:outline-none transition-colors"
               aria-expanded={isOpen}
               aria-label="Toggle navigation menu"
             >
-              {isOpen ? <X className="w-5 h-5 text-sky-400" /> : <Menu className="w-5 h-5" />}
+              {isOpen ? <X className="w-5 h-5 text-amber-400" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
         </div>
@@ -180,12 +180,12 @@ export default function Navbar() {
                   onClick={() => setIsOpen(false)}
                   className={`text-sm font-medium px-4 py-2.5 rounded-xl transition-all flex items-center justify-between ${
                     activeSection === link.id
-                      ? "text-sky-300 bg-sky-500/10 border border-sky-500/20 font-semibold"
+                      ? "text-[#D4AF37] bg-amber-500/10 border border-amber-500/20 font-semibold"
                       : "text-slate-400 hover:text-white hover:bg-white/[0.04]"
                   }`}
                 >
                   <span>{link.name}</span>
-                  {activeSection === link.id && <Sparkles className="w-3.5 h-3.5 text-sky-400" />}
+                  {activeSection === link.id && <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />}
                 </Link>
               ))}
 
@@ -194,16 +194,16 @@ export default function Navbar() {
                   href="/resume.pdf"
                   download="Furkan_Ahmed_Resume.pdf"
                   onClick={() => setIsOpen(false)}
-                  className="inline-flex items-center justify-center gap-1.5 py-2.5 rounded-xl text-xs font-semibold text-slate-200 bg-slate-900 border border-slate-700 hover:bg-slate-800 transition-colors"
+                  className="inline-flex items-center justify-center gap-1.5 py-2.5 rounded-xl text-xs font-semibold text-slate-200 bg-[#0B1120] border border-white/10 hover:bg-slate-800 transition-colors"
                 >
-                  <FileText className="w-3.5 h-3.5 text-sky-400" />
+                  <FileText className="w-3.5 h-3.5 text-amber-400" />
                   <span>Resume</span>
                 </a>
 
                 <Link
                   href="/#contact"
                   onClick={() => setIsOpen(false)}
-                  className="inline-flex items-center justify-center gap-1.5 py-2.5 rounded-xl text-xs font-semibold bg-gradient-to-r from-sky-400 to-indigo-500 text-slate-950 hover:opacity-95 transition-opacity"
+                  className="inline-flex items-center justify-center gap-1.5 py-2.5 rounded-xl text-xs font-semibold bg-[#D4AF37] text-black hover:bg-[#F3E5AB] transition-opacity"
                 >
                   <Send className="w-3 h-3" />
                   <span>Hire Me</span>

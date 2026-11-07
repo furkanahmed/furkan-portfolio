@@ -54,18 +54,21 @@ export default function Projects() {
         </div>
 
         {/* Pure CSS Sticky Card Stacking Container - Zero parent overflow */}
-        <div className="relative w-full pb-32">
+        <div className="relative w-full pb-8 sm:pb-12">
           {projectsData.map((project, index) => {
             const isLive =
               project.status.includes("Live") ||
               project.status.includes("Completed");
+            const isLast = index === projectsData.length - 1;
 
             return (
               <div
                 key={project.id}
-                className="card-wrap w-full [position:sticky] [margin-bottom:40vh] will-change-transform group/card"
+                className={`card-wrap w-full [position:sticky] will-change-transform group/card ${
+                  isLast ? "mb-0" : "mb-[20vh] sm:mb-[28vh]"
+                }`}
                 style={{
-                  top: `calc(100px + ${index} * 24px)`,
+                  top: `calc(100px + ${index} * 20px)`,
                   zIndex: index + 1,
                 }}
               >
