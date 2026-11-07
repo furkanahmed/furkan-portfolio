@@ -42,12 +42,12 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "About", href: "#about", id: "about" },
-    { name: "Skills", href: "#skills", id: "skills" },
-    { name: "Education", href: "#education", id: "education" },
-    { name: "Experience", href: "#experience", id: "experience" },
-    { name: "Projects", href: "#projects", id: "projects" },
-    { name: "Contact", href: "#contact", id: "contact" },
+    { name: "About", href: "/#about", id: "about" },
+    { name: "Skills", href: "/#skills", id: "skills" },
+    { name: "Education", href: "/#education", id: "education" },
+    { name: "Experience", href: "/#experience", id: "experience" },
+    { name: "Projects", href: "/#projects", id: "projects" },
+    { name: "Contact", href: "/#contact", id: "contact" },
   ];
 
   return (
@@ -90,7 +90,7 @@ export default function Navbar() {
               const isHovered = hoveredSection === link.id;
 
               return (
-                <a
+                <Link
                   key={link.name}
                   href={link.href}
                   onMouseEnter={() => setHoveredSection(link.id)}
@@ -122,7 +122,7 @@ export default function Navbar() {
                       <span className="w-1.5 h-1.5 rounded-full bg-sky-400 shadow-[0_0_6px_rgba(56,189,248,1)]"></span>
                     )}
                   </span>
-                </a>
+                </Link>
               );
             })}
           </nav>
@@ -140,13 +140,13 @@ export default function Navbar() {
               <span>Resume</span>
             </a>
 
-            <a
-              href="#contact"
+            <Link
+              href="/#contact"
               className="inline-flex items-center gap-2 px-5 py-2 rounded-full text-sm font-semibold bg-gradient-to-r from-sky-400 via-sky-300 to-indigo-400 text-slate-950 hover:opacity-95 hover:shadow-[0_0_25px_rgba(56,189,248,0.45)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
             >
               <Send className="w-3.5 h-3.5" />
               <span>Hire Me</span>
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Hamburger Button */}
@@ -176,7 +176,7 @@ export default function Navbar() {
           >
             <div className="flex flex-col space-y-1">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
@@ -188,7 +188,7 @@ export default function Navbar() {
                 >
                   <span>{link.name}</span>
                   {activeSection === link.id && <Sparkles className="w-3.5 h-3.5 text-sky-400" />}
-                </a>
+                </Link>
               ))}
 
               <div className="pt-4 mt-2 border-t border-white/10 grid grid-cols-2 gap-2">
@@ -204,14 +204,14 @@ export default function Navbar() {
                   <span>Resume</span>
                 </a>
 
-                <a
-                  href="#contact"
+                <Link
+                  href="/#contact"
                   onClick={() => setIsOpen(false)}
                   className="inline-flex items-center justify-center gap-1.5 py-2.5 rounded-xl text-xs font-semibold bg-gradient-to-r from-sky-400 to-indigo-500 text-slate-950 hover:opacity-95 transition-opacity"
                 >
                   <Send className="w-3 h-3" />
                   <span>Hire Me</span>
-                </a>
+                </Link>
               </div>
             </div>
           </motion.div>
