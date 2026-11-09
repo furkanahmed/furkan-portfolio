@@ -66,15 +66,15 @@ export default function Navbar() {
             href="/"
             className="flex items-center gap-3 group focus:outline-none"
           >
-            <div className="relative flex items-center justify-center w-9 h-9 rounded-xl bg-gradient-to-br from-sky-400/20 via-indigo-500/10 to-transparent border border-sky-500/30 group-hover:border-sky-400 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.25)] transition-all duration-300">
-              <span className="text-base font-black text-sky-400 group-hover:text-white transition-colors">F</span>
-              <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-emerald-400 ring-2 ring-[#0B0F19] shadow-[0_0_8px_rgba(52,211,153,0.8)]"></span>
+            <div className="relative flex items-center justify-center w-9 h-9 rounded-xl bg-gradient-to-br from-amber-500/20 via-[#D4AF37]/10 to-transparent border border-amber-500/30 group-hover:border-amber-400 group-hover:shadow-[0_0_15px_rgba(212,175,55,0.3)] transition-all duration-300">
+              <span className="text-base font-black text-amber-400 group-hover:text-white transition-colors">F</span>
+              <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-amber-400 ring-2 ring-[#0B0F19] shadow-[0_0_8px_rgba(212,175,55,0.8)]"></span>
             </div>
             <div className="flex flex-col">
-              <span className="text-lg sm:text-xl font-bold text-white tracking-tight group-hover:text-sky-300 transition-colors flex items-center gap-1.5">
+              <span className="text-lg sm:text-xl font-bold text-white tracking-tight group-hover:text-amber-300 transition-colors flex items-center gap-1.5">
                 {personalInfo.name}
               </span>
-              <span className="text-[11px] uppercase font-semibold tracking-wider text-slate-400 -mt-0.5">
+              <span className="text-[11px] uppercase font-semibold tracking-wider text-amber-400/80 -mt-0.5">
                 Full-Stack Dev
               </span>
             </div>

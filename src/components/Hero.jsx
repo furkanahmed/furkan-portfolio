@@ -7,10 +7,10 @@ import { personalInfo } from "@/data/portfolioData";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-x-clip min-h-[92vh] pt-32 pb-20 flex flex-col justify-center bg-black text-[#E8DFD8] w-full max-w-full box-border">
+    <section className="relative overflow-x-clip min-h-[90vh] pt-28 sm:pt-32 pb-16 sm:pb-20 flex flex-col justify-center bg-black text-[#E8DFD8] w-full max-w-full box-border">
       {/* Cinematic Golden Amber Vignette & Glow */}
-      <div className="absolute top-1/4 right-1/4 w-[280px] sm:w-[400px] md:w-[500px] h-[280px] sm:h-[400px] md:h-[500px] bg-gradient-to-bl from-amber-500/15 via-[#C99E5D]/10 to-transparent blur-[120px] sm:blur-[160px] pointer-events-none -z-10 max-w-full" />
-      <div className="absolute bottom-10 left-10 w-[240px] sm:w-[320px] md:w-[400px] h-[240px] sm:h-[320px] md:h-[400px] bg-amber-700/10 blur-[110px] sm:blur-[150px] pointer-events-none -z-10 max-w-full" />
+      <div className="absolute top-1/4 right-1/4 w-[240px] sm:w-[400px] md:w-[500px] h-[240px] sm:h-[400px] md:h-[500px] bg-gradient-to-bl from-amber-500/15 via-[#C99E5D]/10 to-transparent blur-[80px] sm:blur-[160px] pointer-events-none -z-10 max-w-full" />
+      <div className="absolute bottom-10 left-10 w-[200px] sm:w-[320px] md:w-[400px] h-[200px] sm:h-[320px] md:h-[400px] bg-amber-700/10 blur-[80px] sm:blur-[150px] pointer-events-none -z-10 max-w-full" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-full box-border">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center w-full max-w-full box-border">
@@ -36,7 +36,7 @@ export default function Hero() {
               transition={{ duration: 0.9, delay: 0.1 }}
               className="space-y-1 select-none w-full max-w-full box-border"
             >
-              <h1 className="text-[clamp(2.5rem,10.5vw,5.5rem)] font-black uppercase tracking-tight leading-[0.92] sm:leading-[0.88] font-sans [overflow-wrap:anywhere] break-words">
+              <h1 className="text-[clamp(2.15rem,9vw,5.5rem)] font-black uppercase tracking-tight leading-[0.96] sm:leading-[0.88] font-sans [overflow-wrap:anywhere] break-words">
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-white via-slate-200 to-slate-500 drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)]">
                   I BUILD
                 </span>

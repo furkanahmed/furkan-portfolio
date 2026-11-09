@@ -92,11 +92,11 @@ export default function About() {
 
           {/* Card 3: Career Goals (6 Cols) */}
           <div className="md:col-span-6 p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-slate-900/90 via-slate-950 to-black border border-white/[0.12] hover:border-amber-500/40 transition-all duration-300 shadow-2xl group">
-            <div className="w-12 h-12 rounded-2xl bg-sky-500/10 border border-sky-500/30 flex items-center justify-center text-sky-400 mb-6 shadow-inner">
+            <div className="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-6 shadow-inner">
               <Target className="w-6 h-6" />
             </div>
 
-            <p className="text-xs font-mono uppercase tracking-[0.25em] text-sky-400 mb-2">
+            <p className="text-xs font-mono uppercase tracking-[0.25em] text-amber-400 mb-2">
               03 &bull; Career Direction
             </p>
 

@@ -88,7 +88,7 @@ export default function Contact() {
       title: "Current Location",
       value: personalInfo.location,
       icon: MapPin,
-      accent: "text-sky-400",
+      accent: "text-amber-400",
       label: "Bangladesh",
     },
   ];

@@ -63,9 +63,9 @@ export default function Projects() {
             return (
               <div
                 key={project.id}
-                className="card-wrap w-full [position:sticky] [margin-bottom:40vh] will-change-transform group/card"
+                className="card-wrap w-full relative sm:[position:sticky] mb-8 sm:mb-0 sm:[margin-bottom:40vh] will-change-transform group/card"
                 style={{
-                  top: `calc(100px + ${index} * 24px)`,
+                  top: `calc(80px + ${index} * 20px)`,
                   zIndex: index + 1,
                 }}
               >
