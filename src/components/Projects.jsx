@@ -195,17 +195,17 @@ export default function Projects() {
                     </div>
 
                     {/* Right Column: Project Preview Image with 100% Solid Background & Clean Edge */}
-                    <div className="relative min-h-[280px] sm:min-h-[360px] lg:min-h-full lg:col-span-5 bg-[#070B14] border-t lg:border-t-0 lg:border-l border-white/[0.10] overflow-hidden flex items-center justify-center">
+                    <div className="relative min-h-[280px] sm:min-h-[360px] lg:min-h-full lg:col-span-5 bg-[#070B14] border-t lg:border-t-0 lg:border-l border-white/[0.10] overflow-hidden flex items-center justify-center p-4 sm:p-6">
                       <Image
                         src={project.image}
                         alt={`${project.name} Preview`}
                         fill
                         sizes="(max-width: 1024px) 100vw, 40vw"
-                        className="object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105"
+                        className="object-contain transition-transform duration-500 ease-out group-hover:scale-105 p-2 drop-shadow-[0_10px_25px_rgba(0,0,0,0.8)]"
                       />
 
-                      {/* Solid edge vignette without transparent leaking */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#070B14]/80 via-transparent to-transparent lg:bg-gradient-to-l lg:from-transparent lg:to-[#070B14]/40 pointer-events-none" />
+                      {/* Subtle ambient glow behind preview */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#070B14]/40 via-transparent to-transparent pointer-events-none" />
                     </div>
 
                   </div>
