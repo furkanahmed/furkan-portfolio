@@ -8,14 +8,15 @@ import {
   ArrowUpRight
 } from "lucide-react";
 import { personalInfo } from "@/data/portfolioData";
+import Container from "@/components/Container";
 
 export default function About() {
   return (
-    <section id="about" className="py-28 sm:py-36 relative overflow-x-clip bg-black text-[#E8DFD8]">
+    <section id="about" className="py-20 sm:py-32 relative overflow-x-clip bg-black text-[#E8DFD8]">
       {/* Cinematic Golden Amber Ambient Lights */}
       <div className="absolute top-1/3 left-1/4 -translate-y-1/2 w-[280px] sm:w-[420px] md:w-[600px] h-[280px] sm:h-[420px] md:h-[600px] bg-gradient-to-tr from-amber-500/10 via-[#D4AF37]/5 to-transparent blur-[120px] sm:blur-[170px] pointer-events-none -z-10 max-w-full" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-full box-border">
+      <Container>
         
         {/* Section Header - Bold, Large & Cinematic */}
         <div className="max-w-3xl mb-16 space-y-4 w-full max-w-full box-border">
@@ -139,7 +140,7 @@ export default function About() {
 
         </div>
 
-      </div>
+      </Container>
     </section>
   );
 }

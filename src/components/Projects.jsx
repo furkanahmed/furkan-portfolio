@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, ExternalLink, Lock } from "lucide-react";
 import { projectsData } from "@/data/portfolioData";
+import Container from "@/components/Container";
 
 function GithubIcon(props) {
   return (
@@ -27,12 +28,12 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-28 sm:py-36 relative bg-black text-[#E8DFD8]"
+      className="py-20 sm:py-32 relative bg-black text-[#E8DFD8]"
     >
       {/* Golden Amber Background Glow - Same as About, Skills & Experience */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] sm:w-[500px] md:w-[55rem] h-[320px] sm:h-[500px] md:h-[55rem] max-w-full bg-[#D4AF37]/[0.03] rounded-full blur-[120px] sm:blur-[180px] pointer-events-none -z-10" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-full box-border relative z-10">
+      <Container className="relative z-10">
         
         {/* Section Header - Exactly matched with About/Skills/Experience */}
         <div className="max-w-3xl mb-14 sm:mb-20 space-y-4 w-full max-w-full box-border">
@@ -214,7 +215,7 @@ export default function Projects() {
           })}
         </div>
 
-      </div>
+      </Container>
 
       {/* Pure CSS Animation Keyframes for native scale & dim support */}
       <style jsx global>{`

@@ -13,6 +13,7 @@ import {
   Sparkles
 } from "lucide-react";
 import { personalInfo } from "@/data/portfolioData";
+import Container from "@/components/Container";
 
 export default function Contact() {
   const [copiedEmail, setCopiedEmail] = useState(false);
@@ -95,7 +96,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-24 sm:py-32 border-t border-white/[0.08] relative overflow-x-clip bg-black">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-full box-border">
+      <Container>
         
         {/* Unified Section Header */}
         <div className="space-y-4 mb-16 text-center sm:text-left w-full max-w-full box-border">
@@ -276,7 +277,7 @@ export default function Contact() {
 
         </div>
 
-      </div>
+      </Container>
     </section>
   );
 }

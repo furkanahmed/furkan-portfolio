@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, FileText, Send, Sparkles } from "lucide-react";
 import { personalInfo } from "@/data/portfolioData";
+import Container from "@/components/Container";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -58,7 +59,7 @@ export default function Navbar() {
           : "bg-transparent py-5"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <Container>
         <div className="flex items-center justify-between">
           
           {/* Brand Logo with Ambient Glow */}
@@ -160,7 +161,7 @@ export default function Navbar() {
             </button>
           </div>
         </div>
-      </div>
+      </Container>
 
       {/* Mobile Drawer Menu */}
       <AnimatePresence>

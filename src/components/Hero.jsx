@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { ArrowUpRight, Download, Terminal, Sparkles, MapPin, Globe, Mail } from "lucide-react";
 import { personalInfo } from "@/data/portfolioData";
+import Container from "@/components/Container";
 
 export default function Hero() {
   return (
@@ -12,8 +13,8 @@ export default function Hero() {
       <div className="absolute top-1/4 right-1/4 w-[240px] sm:w-[400px] md:w-[500px] h-[240px] sm:h-[400px] md:h-[500px] bg-gradient-to-bl from-amber-500/15 via-[#C99E5D]/10 to-transparent blur-[80px] sm:blur-[160px] pointer-events-none -z-10 max-w-full" />
       <div className="absolute bottom-10 left-10 w-[200px] sm:w-[320px] md:w-[400px] h-[200px] sm:h-[320px] md:h-[400px] bg-amber-700/10 blur-[80px] sm:blur-[150px] pointer-events-none -z-10 max-w-full" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-full box-border">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center w-full max-w-full box-border">
+      <Container>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 items-center w-full max-w-full box-border">
           
           {/* Left Column: Massive Hollywood Typography */}
           <div className="lg:col-span-7 space-y-6 w-full max-w-full box-border">
@@ -36,7 +37,7 @@ export default function Hero() {
               transition={{ duration: 0.9, delay: 0.1 }}
               className="space-y-1 select-none w-full max-w-full box-border"
             >
-              <h1 className="text-[clamp(2.15rem,9vw,5.5rem)] font-black uppercase tracking-tight leading-[0.96] sm:leading-[0.88] font-sans [overflow-wrap:anywhere] break-words">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black uppercase tracking-tight leading-[0.98] sm:leading-[0.92] font-sans [overflow-wrap:anywhere] break-words">
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-white via-slate-200 to-slate-500 drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)]">
                   I BUILD
                 </span>
@@ -73,11 +74,11 @@ export default function Hero() {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.45 }}
-              className="flex flex-wrap items-center gap-4 pt-3"
+              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 pt-3 w-full sm:w-auto"
             >
               <a
                 href="#projects"
-                className="group inline-flex items-center gap-2 px-7 py-3.5 border border-[#D4AF37] bg-gradient-to-r from-[#D4AF37]/20 via-[#D4AF37]/10 to-transparent hover:bg-[#D4AF37] hover:text-black text-[#FFF0D4] text-xs uppercase tracking-[0.2em] font-semibold transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.25)]"
+                className="group inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3.5 border border-[#D4AF37] bg-gradient-to-r from-[#D4AF37]/20 via-[#D4AF37]/10 to-transparent hover:bg-[#D4AF37] hover:text-black text-[#FFF0D4] text-xs uppercase tracking-[0.2em] font-semibold transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.25)] min-h-[44px]"
               >
                 <span>EXPLORE WORK</span>
                 <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -86,7 +87,7 @@ export default function Hero() {
               <a
                 href="/resume.pdf"
                 download="Furkan_Ahmed_Resume.pdf"
-                className="inline-flex items-center gap-2 px-6 py-3.5 border border-white/20 hover:border-white/50 text-[#C4B5A5] hover:text-white text-xs uppercase tracking-[0.18em] font-medium transition-all duration-300 backdrop-blur-sm"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border border-white/20 hover:border-white/50 text-[#C4B5A5] hover:text-white text-xs uppercase tracking-[0.18em] font-medium transition-all duration-300 backdrop-blur-sm min-h-[44px]"
               >
                 <Download className="w-4 h-4 text-amber-400" />
                 <span>RESUME</span>
@@ -100,7 +101,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="lg:col-span-5 flex justify-center lg:justify-end"
+            className="lg:col-span-5 flex justify-center"
           >
             <div className="relative w-full max-w-sm sm:max-w-md group">
               {/* Outer Golden Aura */}
@@ -132,7 +133,7 @@ export default function Hero() {
           </motion.div>
 
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

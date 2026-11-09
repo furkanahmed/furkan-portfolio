@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { ArrowUp, MessageSquare, Globe } from "lucide-react";
 import { personalInfo } from "@/data/portfolioData";
+import Container from "@/components/Container";
 
 function GithubIcon(props) {
   return (
@@ -69,7 +70,7 @@ export default function Footer() {
       {/* Subtle Ambient Background Glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 sm:w-96 h-24 bg-amber-500/5 blur-3xl pointer-events-none max-w-full" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 w-full max-w-full box-border">
+      <Container className="pt-16 pb-12">
         {/* 3-Column Responsive Grid */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 sm:gap-12 pb-14 border-b border-white/[0.08]">
           
@@ -166,7 +167,7 @@ export default function Footer() {
           </button>
         </div>
 
-      </div>
+      </Container>
     </footer>
   );
 }

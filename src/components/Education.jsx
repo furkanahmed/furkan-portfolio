@@ -10,6 +10,7 @@ import {
   Code2
 } from "lucide-react";
 import { educationData } from "@/data/educationData";
+import Container from "@/components/Container";
 
 export default function Education() {
   const getIconForCategory = (idx) => {
@@ -26,7 +27,7 @@ export default function Education() {
       {/* Subtle Cinematic Ambient Light */}
       <div className="absolute top-1/2 left-1/3 -translate-y-1/2 w-[260px] sm:w-[380px] md:w-[500px] h-[260px] sm:h-[380px] md:h-[500px] bg-gradient-to-tr from-amber-500/10 via-[#D4AF37]/5 to-transparent blur-[110px] sm:blur-[160px] pointer-events-none -z-10 max-w-full" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-full box-border">
+      <Container>
         
         {/* Simple & Clean Section Header */}
         <div className="mb-14 space-y-3 w-full max-w-full box-border">
@@ -94,7 +95,7 @@ export default function Education() {
           })}
         </div>
 
-      </div>
+      </Container>
     </section>
   );
 }
