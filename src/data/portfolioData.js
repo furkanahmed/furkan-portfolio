@@ -16,7 +16,7 @@ export const personalInfo = {
   linkedin: "https://www.linkedin.com/in/furkanahmedbd",
   facebook: "https://fb.com/dremoyit",
   resumeUrl: "/resume.pdf",
-  avatarUrl: "/images/furkan-ahmed.webp"
+  avatarUrl: "/images/furkanahmed.webp"
 };
 
 export const skillsData = {
